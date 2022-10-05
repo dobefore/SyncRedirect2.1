@@ -18,3 +18,8 @@ elif point_ver>=28:
     addr = sync_addr # put your server address here
     os.environ["SYNC_ENDPOINT"] = addr + "sync/"
     os.environ["SYNC_ENDPOINT_MEDIA"] = addr + "msync/"
+    # set max upload limit
+    # 5G
+    os.environ["MAX_UPLOAD_MEGS_UNCOMP"] =str(1024*5)
+    # 3 G
+    os.environ["MAX_UPLOAD_MEGS_COMP"] =str(1024*3)
